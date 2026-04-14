@@ -15,9 +15,16 @@ import '@clean-ui/core/styles'
 <Badge variant="success">Active</Badge>
 ```
 
+## 📚 Documentation
+
+**Live docs:** https://filippo-mancinelli.github.io/clean-ui/
+
 ## Components
 
 Button, Input, Textarea, Badge, Table, Dialog, Tabs, Select, Tooltip
+Checkbox, Radio, Switch, Label, Alert, Progress, Skeleton
+Card, Container, Breadcrumbs, Pagination, Menu
+Accordion, Avatar, Slider
 
 ## Theming
 
