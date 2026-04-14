@@ -107,6 +107,10 @@ dist
 # Docusaurus cache and generated files
 .docusaurus
 
+# Clean UI specific
+demo/dist
+docs/_build
+
 # Serverless directories
 .serverless/
 

@@ -1,0 +1,32 @@
+# Development files
+src/
+demo/
+docs/
+.gitignore
+.gitattributes
+vite-demo.config.ts
+tsconfig.json
+tailwind.config.js
+postcss.config.js
+*.log
+
+# Build artifacts (keep dist)
+dist/
+
+# Dependencies
+node_modules/
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
