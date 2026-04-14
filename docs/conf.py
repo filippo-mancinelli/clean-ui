@@ -44,7 +44,16 @@ html_static_path = ['_static']
 
 html_css_files = [
     'custom.css',
+    'theme-switcher.css',
 ]
+
+html_js_files = [
+    'theme-switcher.js',
+]
+
+html_context = {
+    'theme_switcher_enabled': True,
+}
 
 # Theme options
 html_theme_options = {

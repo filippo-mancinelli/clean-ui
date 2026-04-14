@@ -8,7 +8,7 @@ export function BreadcrumbItem({ children, href, className = '', ...props }: Bre
   if (href) {
     return (
       <li className={['inline-flex items-center', className].join(' ')} {...props}>
-        <a href={href} className="text-sm text-muted hover:text-accent transition-colors">
+        <a href={href} rel="noopener noreferrer" className="text-sm text-muted hover:text-accent transition-colors">
           {children}
         </a>
       </li>
@@ -33,11 +33,9 @@ export function BreadcrumbSeparator({ separator = '/', className = '' }: Breadcr
   )
 }
 
-export interface BreadcrumbsProps extends HTMLAttributes<HTMLElement> {
-  separator?: string
-}
+export interface BreadcrumbsProps extends HTMLAttributes<HTMLElement> {}
 
-export function Breadcrumbs({ children, separator = '/', className = '' }: BreadcrumbsProps) {
+export function Breadcrumbs({ children, className = '' }: BreadcrumbsProps) {
   return (
     <nav className={['flex items-center gap-1', className].join(' ')}>
       <ol className="flex items-center gap-1">

@@ -24,7 +24,7 @@ export function Checkbox({
   id,
   className = '',
 }: CheckboxProps) {
-  const checkboxId = id || `checkbox-${Math.random().toString(36).substr(2, 9)}`
+  const checkboxId = id || `checkbox-${Math.random().toString(36).slice(2, 11)}`
 
   return (
     <div className={['flex items-start gap-2', className].join(' ')}>
@@ -63,3 +63,5 @@ export function Checkbox({
     </div>
   )
 }
+
+Checkbox.displayName = 'Checkbox'

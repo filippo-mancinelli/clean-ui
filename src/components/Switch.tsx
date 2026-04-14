@@ -21,7 +21,7 @@ export function Switch({
   id,
   className = '',
 }: SwitchProps) {
-  const switchId = id || `switch-${Math.random().toString(36).substr(2, 9)}`
+  const switchId = id || `switch-${Math.random().toString(36).slice(2, 11)}`
 
   return (
     <div className={['flex items-center gap-2', className].join(' ')}>
@@ -55,3 +55,5 @@ export function Switch({
     </div>
   )
 }
+
+Switch.displayName = 'Switch'
